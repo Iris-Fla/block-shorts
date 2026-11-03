@@ -1,0 +1,17 @@
+/* Shorts棚・サイドバー項目・Shortsサムネ・検索結果のShorts */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+ytd-guide-entry-renderer:has(a[title="Shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+yt-tab-shape[tab-title="Shorts"] { display: none !important; }
+
+/* 新UI(view-model系): 検索結果などのShorts */
+grid-shelf-view-model:has(a[href*="/shorts/"]),
+ytm-shorts-lockup-view-model,
+ytm-shorts-lockup-view-model-v2,
+yt-lockup-view-model:has(a[href*="/shorts/"]),
+ytd-shelf-renderer:has(a[href*="/shorts/"]),
+ytd-item-section-renderer:has(> #contents > a[href*="/shorts/"]) { display: none !important; }
